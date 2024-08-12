@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid pb-3">
+    <div class="d-grid gap-3" style="grid-template-columns: 1fr 2fr;">
+        <div class="bg-light border rounded-3">
+            <div class="col">
+                <form method="post" th:action="@{/update}">
+
+                    <input name="movieId" th:value="${movie.movieId}" type="hidden">
+                    <input class="form-control" name="movieName" placeholder="Movie Name" th:value="${movie.movieName}"
+                           type="text">
+                    <input class="form-control" name="releaseDate" placeholder="Release Date"
+                           th:value="${movie.releaseDate}"
+                           type="text">
+                    <input class="form-control" name="ticketPrice" placeholder="Ticket Price"
+                           th:value="${movie.ticketPrice}"
+                           type="number">
+                    <input class="form-control" name="image" placeholder="Poster" type="text">
+                    <!--        <input type="text" class="form-control" placeholder="Positions" name="Positions">-->
+                    <button class="btn btn-outline-primary btn-sm " type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
