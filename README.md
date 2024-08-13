@@ -82,7 +82,7 @@ Before you begin, ensure you have the following prerequisites installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/rameshwargithub/Theater-hall-management.git
+   https://github.com/ravisharmaa2611/Theatre-hall-management-.git
    ```
 
 2. Navigate to the project directory:
